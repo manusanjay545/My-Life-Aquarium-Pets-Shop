@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://my-life-aquarium-pets-shop.vercel.app/sitemap.xml
