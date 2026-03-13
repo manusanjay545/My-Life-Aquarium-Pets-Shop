@@ -8,7 +8,7 @@
   <meta name="description"
     content="My Life Aquarium &amp; Pets — your trusted aquarium fish dealer and pet shop in Palladam, Tiruppur. Wide range of aquarium fish, tanks, accessories, fish food &amp; pet supplies since 2021.">
   <meta name="keywords"
-    content="aquarium shop palladam, pet shop tiruppur, aquarium fish dealer, fish tanks, aquarium accessories, fish food, pet supplies, my life aquarium">
+    content="aquarium shop palladam, pet shop tiruppur, pet shop near me, my life aquarium, aquarium fish dealer, dog food palladam, cat food, aquarium accessories, fish tanks, fish food, pet supplies, exotic birds, aquarium setup">
   <meta name="author" content="My Life Aquarium &amp; Pets">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#0077B6">
@@ -27,6 +27,7 @@
   <!-- Google Fonts preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="image" href="images/hero-bg.webp" type="image/webp">
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
@@ -67,7 +68,7 @@
     "priceRange": "$$",
     "paymentAccepted": "Cash, UPI, PhonePe, Paytm, Google Pay",
     "foundingDate": "2021",
-    "image": "images/hero-bg.png"
+    "image": "images/hero-bg.webp"
   }
   </script>
 </head>
@@ -119,7 +120,7 @@
   <!-- ============ HERO ============ -->
   <section class="hero" id="home">
     <div class="hero-bg">
-      <img src="images/hero-bg.png" alt="Beautiful underwater aquarium" loading="eager">
+      <img src="images/hero-bg.webp" alt="Beautiful planted aquarium background" fetchpriority="high">
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
@@ -207,7 +208,7 @@
           </div>
         </div>
         <div class="about-image reveal">
-          <img src="images/tanks-category.png" alt="Beautiful aquarium setup at My Life Aquarium" loading="lazy">
+          <img src="images/tanks-category.webp" alt="Beautiful aquarium setup at My Life Aquarium" loading="lazy">
         </div>
       </div>
     </div>
@@ -221,49 +222,54 @@
         <p>Explore our wide range of aquarium and pet supplies</p>
       </div>
       <div class="products-grid">
+        <!-- Card 1 -->
         <div class="product-card reveal">
           <div class="product-card-img">
-            <img src="images/fish-category.png" alt="Aquarium Fish" loading="lazy">
+            <img src="images/fish-category.webp" alt="Ornamental Fish Variety" loading="lazy">
           </div>
           <div class="product-card-body">
-            <h4>Aquarium Fish</h4>
-            <p>Goldfish, Bettas, Guppies, Tetras &amp; more</p>
+            <h4>Ornamental Fishes</h4>
+            <p>Guppies, Tetras, Cichlids &amp; more</p>
           </div>
         </div>
-        <div class="product-card reveal">
+        <!-- Card 2 -->
+        <div class="product-card reveal" style="transition-delay: .1s">
           <div class="product-card-img">
-            <img src="images/tanks-category.png" alt="Aquariums and Tanks" loading="lazy">
+            <img src="images/tanks-category.webp" alt="Glass Fish Tanks" loading="lazy">
           </div>
           <div class="product-card-body">
             <h4>Aquariums &amp; Tanks</h4>
-            <p>All sizes from nano to large tanks</p>
+            <p>Custom &amp; molded glass tanks</p>
           </div>
         </div>
-        <div class="product-card reveal">
+        <!-- Card 3 -->
+        <div class="product-card reveal" style="transition-delay: .2s">
           <div class="product-card-img">
-            <img src="images/accessories-category.png" alt="Aquarium Accessories" loading="lazy">
+            <img src="images/accessories-category.webp" alt="Aquarium Accessories & Filters" loading="lazy">
           </div>
           <div class="product-card-body">
             <h4>Accessories</h4>
-            <p>Filters, lights, heaters &amp; décor</p>
+            <p>Filters, pumps, heaters &amp; decor</p>
           </div>
         </div>
-        <div class="product-card reveal">
+        <!-- Card 4 -->
+        <div class="product-card reveal" style="transition-delay: .3s">
           <div class="product-card-img">
-            <img src="images/fishfood-category.png" alt="Fish Food" loading="lazy">
+            <img src="images/fishfood-category.webp" alt="Premium Fish Food" loading="lazy">
           </div>
           <div class="product-card-body">
-            <h4>Fish Food</h4>
-            <p>Flakes, pellets &amp; speciality feeds</p>
+            <h4>Premium Fish Food</h4>
+            <p>Pellets, flakes &amp; live food</p>
           </div>
         </div>
-        <div class="product-card reveal">
+        <!-- Card 5 -->
+        <div class="product-card reveal" style="transition-delay: .4s">
           <div class="product-card-img">
-            <img src="images/pets-category.png" alt="Pet Food and Supplies" loading="lazy">
+            <img src="images/pets-category.webp" alt="Small pets and birds" loading="lazy">
           </div>
           <div class="product-card-body">
-            <h4>Pet Supplies</h4>
-            <p>Food, care products &amp; accessories</p>
+            <h4>Pet Supplies &amp; Birds</h4>
+            <p>Food &amp; toys for birds &amp; small pets</p>
           </div>
         </div>
       </div>
@@ -829,7 +835,7 @@
   <!-- Instagram Embed Script -->
   <script async src="https://www.instagram.com/embed.js"></script>
   <!-- JavaScript -->
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 
 </html>
