@@ -193,7 +193,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const waMessage = encodeURIComponent(
       `Hi! I'm ${name}.\nPhone: ${phone}\n\n${message}`
     );
-    const waUrl = `https://wa.me/919876543210?text=${waMessage}`;
+    const waUrl = `https://wa.me/918778288225?text=${waMessage}`;
 
     // Show success toast
     showToast('Redirecting to WhatsApp...', 'success');
